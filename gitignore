@@ -1,0 +1,10 @@
+target/
+bin/
+.idea/
+.metadata/
+.settings/
+*.iml
+*.txt
+*.classpath
+screenshots/
+report/**
