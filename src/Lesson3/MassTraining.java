@@ -17,6 +17,7 @@ public class MassTraining {
 
         //Создать пустой массив типа int с названием mas размера n=5;
         for (int i = 0; i < mas.length; i++) {
+
             mas[i] = i + 1;
         }
 
