@@ -48,7 +48,8 @@ public class MassExamples {
 //Найти минимальный элемент
         int min = mas[0];
         for (int i = 0; i < mas.length; i++) {
-            if (mas[i] < min) {
+            if (mas[i] < min)
+            {
                 min = mas[i];
             }
         }
