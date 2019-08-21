@@ -2,7 +2,7 @@ package Homework2;
 
 import java.util.Scanner;
 
-class Task2_1 {
+class Task2_7 {
     public static void main(String[] args) {
         // Объявляем Scanner
         Scanner input = new Scanner(System.in);
@@ -23,17 +23,19 @@ class Task2_1 {
             System.out.print(" " + mas[i]);
         }
         System.out.println('\n');
-
-        //пройти по массиву, вывести все элементы в обратном порядке
-        System.out.println("В обратном порядке:");
-        for (int i = mas.length - 1; i >= 0; i--) {
-            System.out.print(mas[i]);
+        
+        //найти минимальный-максимальный элементы и вывести
+        int min = mas[0];
+        int max = mas[1];
+        for (int i = 0; i < mas.length; i++) {
+            if (mas[i] < min) {
+                min = mas[i];
+            }
+            if (mas[i] > max) {
+                max = mas[i];
+            }
         }
-        System.out.println('\n');
+        System.out.println("Минимальный и максимальный элементы:");
+        System.out.println(min + " " + max);
     }
 }
-
-
-
-
-

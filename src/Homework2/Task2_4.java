@@ -2,7 +2,7 @@ package Homework2;
 
 import java.util.Scanner;
 
-class Task2_1 {
+class Task2_4 {
     public static void main(String[] args) {
         // Объявляем Scanner
         Scanner input = new Scanner(System.in);
@@ -24,16 +24,16 @@ class Task2_1 {
         }
         System.out.println('\n');
 
-        //пройти по массиву, вывести все элементы в обратном порядке
-        System.out.println("В обратном порядке:");
-        for (int i = mas.length - 1; i >= 0; i--) {
-            System.out.print(mas[i]);
+        //найти количество нулевых элементов, вывести количество. если нулевых элементов нет - вывести сообщение, что их нет
+        int flag = 0;
+        for (int i = 0; i < mas.length; i++) {
+            if (mas[i] == 0) {
+                System.out.println(i);
+                flag++;
+            }
         }
-        System.out.println('\n');
+        if (flag != 0) {
+            System.out.println("нет элементов, равных нулю");
+        }
     }
 }
-
-
-
-
-

@@ -2,7 +2,7 @@ package Homework2;
 
 import java.util.Scanner;
 
-class Task2_1 {
+class Task2_3 {
     public static void main(String[] args) {
         // Объявляем Scanner
         Scanner input = new Scanner(System.in);
@@ -24,16 +24,19 @@ class Task2_1 {
         }
         System.out.println('\n');
 
-        //пройти по массиву, вывести все элементы в обратном порядке
-        System.out.println("В обратном порядке:");
-        for (int i = mas.length - 1; i >= 0; i--) {
-            System.out.print(mas[i]);
+        //каждый 3-й элемент массива умножить на 2 (1 способ)
+        System.out.println("Умножение каждого третьего элемента на 2:");
+        for (int i = 0; i < mas.length; i += 3) {
+            System.out.print(mas[i] * 2);
         }
-        System.out.println('\n');
+
+        /*//2 способ (проверяем, что индекс элемента масива делится на 3 без остатка)
+        for (int i = 0; i < mas.length; i++)
+        {
+            if (i % 3 == 0)
+            {
+                mas[i] *= 2;
+            }
+            System.out.println(mas[i]);*/
     }
 }
-
-
-
-
-

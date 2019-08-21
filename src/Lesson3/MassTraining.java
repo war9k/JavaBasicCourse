@@ -32,6 +32,7 @@ public class MassTraining {
             mas[i] = mas[i] + 2;
             System.out.println(mas[i]);
         }
+
         //Каждый элемент mas_double возвести в квадрат. Вывести результат
         int powerTwo = 2;
         for (int i = 0; i < mas_double.length; i++) {

@@ -2,7 +2,7 @@ package Homework2;
 
 import java.util.Scanner;
 
-class Task2_1 {
+class Task2_5 {
     public static void main(String[] args) {
         // Объявляем Scanner
         Scanner input = new Scanner(System.in);
@@ -24,16 +24,19 @@ class Task2_1 {
         }
         System.out.println('\n');
 
-        //пройти по массиву, вывести все элементы в обратном порядке
-        System.out.println("В обратном порядке:");
-        for (int i = mas.length - 1; i >= 0; i--) {
+        //пройти по массиву и поменять местами каждые 2 соседних элемента
+        if (mas.length < 2) return;
+
+        //находим середину массива
+        int border = (mas.length + 1) / 2;
+
+        //меняем местами элементы массива
+        for (int i = 0; i < mas.length / 2; i++) {
+            int temp = mas[i];
+            mas[i] = mas[border + i];
+            mas[border + i] = temp;
+
             System.out.print(mas[i]);
         }
-        System.out.println('\n');
     }
 }
-
-
-
-
-
