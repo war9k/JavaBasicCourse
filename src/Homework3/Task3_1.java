@@ -4,9 +4,9 @@ public class Task3_1 {
     public static void main(String[] args) {
         //Возвращаем минимальное число
         //вариант с приведением к инту
-        int a = (int) (Math.random() * (100 - 1)+ 1);
-        int b = (int) (Math.random() * (100 - 1)+ 1);
-        int c = (int) (Math.random() * (100 - 1)+ 1);
+        int a = (int) (Math.random() * (100 - 1) + 1);
+        int b = (int) (Math.random() * (100 - 1) + 1);
+        int c = (int) (Math.random() * (100 - 1) + 1);
         int result1 = returnMin(a, b);
         System.out.println(result1);
 
