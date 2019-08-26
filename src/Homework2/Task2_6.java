@@ -28,6 +28,7 @@ class Task2_6 {
         int c = mas[0];
         mas[0] = mas[mas.length - 1];
         mas[mas.length - 1] = c;
+        System.out.println(mas[0]);
     }
 }
 
