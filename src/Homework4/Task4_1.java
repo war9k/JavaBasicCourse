@@ -1,7 +1,6 @@
 package Homework4;
 
-
-public class Call
+public class Task4_1
 {
     public static void main(String[] args)
     {
