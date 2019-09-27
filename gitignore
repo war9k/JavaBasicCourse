@@ -8,3 +8,6 @@ bin/
 *.classpath
 screenshots/
 report/**
+.idea/
+Sortirovki.iml
+out/
